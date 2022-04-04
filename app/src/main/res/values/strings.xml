@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ifood</string>
+
+    <string-array name="categories">
+        <item>Japonesa</item>
+        <item>Brasileira</item>
+        <item>Italiana</item>
+        <item>Francesa</item>
+        <item>Fast Food</item>
+        <item>Caseira</item>
+        <item>Doces</item>
+        <item>Salgados</item>
+    </string-array>
+</resources>

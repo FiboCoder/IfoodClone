@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.AuthActivity"
+    android:background="@color/red"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmailAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:hint="E-mail"
+        android:background="@drawable/et_auth"
+        android:inputType="textEmailAddress"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="6dp"
+        android:hint="Senha"
+        android:background="@drawable/et_auth"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Acessar"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/stAccessType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Usuário"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/stUserType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Empresa"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Acessar"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:background="@color/red2"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

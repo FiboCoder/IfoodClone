@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.UserConfigActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informações Pessoais"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black2"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etUserNameUC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Nome do usuário"
+            android:background="@drawable/et_fields"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Endereço"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black2"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etStreetUC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Rua e Nº"
+            android:background="@drawable/et_fields"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDistrictUC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Bairro"
+            android:background="@drawable/et_fields"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etCityUC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Cidade"
+            android:background="@drawable/et_fields"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSaveUC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_save"
+            android:text="Salvar"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

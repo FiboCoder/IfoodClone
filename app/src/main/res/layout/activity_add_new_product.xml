@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.AddNewProductActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <include layout="@layout/toolbar"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProductNP"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/perfil"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etProductNameNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Nome do produto"
+            android:background="@drawable/et_fields"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDescriptionNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Descrição"
+            android:background="@drawable/et_fields"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etPriceNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:hint="Preço"
+            android:inputType="numberDecimal"
+            android:background="@drawable/et_fields"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSaveNP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_save"
+            android:text="Adicionar Produto"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
